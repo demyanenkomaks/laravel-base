@@ -3,7 +3,7 @@
 | Service  | Version |
 |----------|---------|
 | mysql    | 8       |
-| or pgsql | 14      |
+| or pgsql | 16      |
 | php      | 8.3     |
 | laravel  | 12      |
 | filament | 3       |
