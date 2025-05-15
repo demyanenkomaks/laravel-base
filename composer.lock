@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2374078d15bc4932d649ee3e3f3b5d92",
+    "content-hash": "8e59879695079f944f36f29d8e051e0b",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -71,6 +71,93 @@
                 "source": "https://github.com/AnourValar/eloquent-serialize/tree/1.3.1"
             },
             "time": "2025-04-06T06:54:34+00:00"
+        },
+        {
+            "name": "bezhansalleh/filament-shield",
+            "version": "3.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bezhanSalleh/filament-shield.git",
+                "reference": "f77e4a47a4c411ca973e1964dbc1f963dd09e1c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bezhanSalleh/filament-shield/zipball/f77e4a47a4c411ca973e1964dbc1f963dd09e1c4",
+                "reference": "f77e4a47a4c411ca973e1964dbc1f963dd09e1c4",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.2",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.9",
+                "spatie/laravel-permission": "^6.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.0",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^7.0|^8.0",
+                "orchestra/testbench": "^8.0|^9.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-laravel": "^2.3",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "phpunit/phpunit": "^10.1",
+                "spatie/laravel-ray": "^1.37"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FilamentShield": "BezhanSalleh\\FilamentShield\\Facades\\FilamentShield"
+                    },
+                    "providers": [
+                        "BezhanSalleh\\FilamentShield\\FilamentShieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BezhanSalleh\\FilamentShield\\": "src",
+                    "BezhanSalleh\\FilamentShield\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bezhan Salleh",
+                    "email": "bezhan_salleh@yahoo.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Filament support for `spatie/laravel-permission`.",
+            "homepage": "https://github.com/bezhansalleh/filament-shield",
+            "keywords": [
+                "acl",
+                "bezhanSalleh",
+                "filament",
+                "filament-shield",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/bezhanSalleh/filament-shield/issues",
+                "source": "https://github.com/bezhanSalleh/filament-shield/tree/3.3.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/bezhanSalleh",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-03T02:31:53+00:00"
         },
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -3145,16 +3232,16 @@
         },
         {
             "name": "maksde/helpers",
-            "version": "4.1.1",
+            "version": "4.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/demyanenkomaks/helpers.git",
-                "reference": "4e2fa1bc45b9b968b8c178cef9c499f915d52211"
+                "reference": "722871e466427760e30550f8647d66b05b613906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/demyanenkomaks/helpers/zipball/4e2fa1bc45b9b968b8c178cef9c499f915d52211",
-                "reference": "4e2fa1bc45b9b968b8c178cef9c499f915d52211",
+                "url": "https://api.github.com/repos/demyanenkomaks/helpers/zipball/722871e466427760e30550f8647d66b05b613906",
+                "reference": "722871e466427760e30550f8647d66b05b613906",
                 "shasum": ""
             },
             "require": {
@@ -3184,25 +3271,25 @@
                     "email": "demyanenkomaks0@gmail.com"
                 }
             ],
-            "description": "Helpers for Filament",
+            "description": "Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм, таблиц и фильтров таблиц.",
             "support": {
                 "issues": "https://github.com/demyanenkomaks/helpers/issues",
-                "source": "https://github.com/demyanenkomaks/helpers/tree/v4.1.1"
+                "source": "https://github.com/demyanenkomaks/helpers/tree/v4.1.5"
             },
-            "time": "2025-05-14T11:15:01+00:00"
+            "time": "2025-05-15T07:30:10+00:00"
         },
         {
             "name": "maksde/support",
-            "version": "1.0.2",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/demyanenkomaks/support.git",
-                "reference": "8afa1b71b2199d68defb1e794fbab5b838ff0ba1"
+                "reference": "fea1aeb2626f45c38393b5330c68cae1ee1fd432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/demyanenkomaks/support/zipball/8afa1b71b2199d68defb1e794fbab5b838ff0ba1",
-                "reference": "8afa1b71b2199d68defb1e794fbab5b838ff0ba1",
+                "url": "https://api.github.com/repos/demyanenkomaks/support/zipball/fea1aeb2626f45c38393b5330c68cae1ee1fd432",
+                "reference": "fea1aeb2626f45c38393b5330c68cae1ee1fd432",
                 "shasum": ""
             },
             "require": {
@@ -3235,12 +3322,12 @@
                     "email": "demyanenkomaks0@gmail.com"
                 }
             ],
-            "description": "Helpers for Laravel",
+            "description": "Помощник для Laravel",
             "support": {
                 "issues": "https://github.com/demyanenkomaks/support/issues",
-                "source": "https://github.com/demyanenkomaks/support/tree/v1.0.2"
+                "source": "https://github.com/demyanenkomaks/support/tree/v1.0.6"
             },
-            "time": "2025-05-14T11:43:55+00:00"
+            "time": "2025-05-15T07:29:27+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -4987,6 +5074,89 @@
                 }
             ],
             "time": "2025-04-11T15:27:14+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "6.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "3c05f04d12275dfbe462c8b4aae3290e586c2dde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/3c05f04d12275dfbe462c8b4aae3290e586c2dde",
+                "reference": "3c05f04d12275dfbe462c8b4aae3290e586c2dde",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/container": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/database": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/passport": "^11.0|^12.0",
+                "laravel/pint": "^1.0",
+                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^9.4|^10.1|^11.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "6.x-dev",
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 8.0 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-permission/issues",
+                "source": "https://github.com/spatie/laravel-permission/tree/6.18.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-14T03:32:23+00:00"
         },
         {
             "name": "symfony/clock",
@@ -7342,6 +7512,142 @@
             "time": "2024-12-21T16:25:41+00:00"
         },
         {
+            "name": "tomatophp/console-helpers",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomatophp/console-helpers.git",
+                "reference": "69dd818a2bfa7d038467fb526be6c9b573d36a34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomatophp/console-helpers/zipball/69dd818a2bfa7d038467fb526be6c9b573d36a34",
+                "reference": "69dd818a2bfa7d038467fb526be6c9b573d36a34",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TomatoPHP\\ConsoleHelpers\\ConsoleHelpersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TomatoPHP\\ConsoleHelpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fady Mondy",
+                    "email": "EngFadyMondy@gmail.com"
+                }
+            ],
+            "description": "tons of helper you need for you artisan command line application",
+            "keywords": [
+                "application",
+                "artisan",
+                "command",
+                "console",
+                "helpers",
+                "line"
+            ],
+            "support": {
+                "issues": "https://github.com/tomatophp/console-helpers/issues",
+                "source": "https://github.com/tomatophp/console-helpers/tree/v1.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/3x1io",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-02-12T12:00:38+00:00"
+        },
+        {
+            "name": "tomatophp/filament-users",
+            "version": "2.0.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomatophp/filament-users.git",
+                "reference": "6b898f251f2e1c7563362fa5f9b46eaa8e6eee9c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomatophp/filament-users/zipball/6b898f251f2e1c7563362fa5f9b46eaa8e6eee9c",
+                "reference": "6b898f251f2e1c7563362fa5f9b46eaa8e6eee9c",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.3",
+                "php": "^8.2|^8.3|^8.4",
+                "tomatophp/console-helpers": "^1.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.21",
+                "livewire/livewire": "^2.10|^3.0",
+                "nunomaduro/larastan": "^3.1",
+                "orchestra/testbench": "^10.0",
+                "pestphp/pest": "^3.7",
+                "pestphp/pest-plugin-laravel": "^3.1",
+                "pestphp/pest-plugin-livewire": "^3.0",
+                "phpstan/extension-installer": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
+                "phpstan/phpstan-phpunit": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TomatoPHP\\FilamentUsers\\FilamentUsersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TomatoPHP\\FilamentUsers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fady Mondy",
+                    "email": "info@3x1.io"
+                }
+            ],
+            "description": "Manage your users with a highly customizable user resource for FilamentPHP with integration of filament-shield and filament-impersonate",
+            "keywords": [
+                "User management",
+                "Users",
+                "filament-impersonate",
+                "filament-shield",
+                "filamentphp",
+                "laravel",
+                "php",
+                "user CRUD",
+                "user resource"
+            ],
+            "support": {
+                "issues": "https://github.com/tomatophp/filament-users/issues",
+                "source": "https://github.com/tomatophp/filament-users/tree/v2.0.19"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/3x1io",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-24T11:58:26+00:00"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.6.2",
             "source": {
@@ -7561,16 +7867,16 @@
     "packages-dev": [
         {
             "name": "driftingly/rector-laravel",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/driftingly/rector-laravel.git",
-                "reference": "68c23d123bd80777536ce460936748d135bd6982"
+                "reference": "ac61de4f267c23249d175d7fc9149fd01528567d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/68c23d123bd80777536ce460936748d135bd6982",
-                "reference": "68c23d123bd80777536ce460936748d135bd6982",
+                "url": "https://api.github.com/repos/driftingly/rector-laravel/zipball/ac61de4f267c23249d175d7fc9149fd01528567d",
+                "reference": "ac61de4f267c23249d175d7fc9149fd01528567d",
                 "shasum": ""
             },
             "require": {
@@ -7590,9 +7896,9 @@
             "description": "Rector upgrades rules for Laravel Framework",
             "support": {
                 "issues": "https://github.com/driftingly/rector-laravel/issues",
-                "source": "https://github.com/driftingly/rector-laravel/tree/2.0.4"
+                "source": "https://github.com/driftingly/rector-laravel/tree/2.0.5"
             },
-            "time": "2025-04-13T14:43:39+00:00"
+            "time": "2025-05-14T17:30:41+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -9031,12 +9337,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "5326c903c04c522c27d45dacfb6a521a448a399a"
+                "reference": "4aa0a0890ece3b361fc4179b1e30fdcc0d2c689b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5326c903c04c522c27d45dacfb6a521a448a399a",
-                "reference": "5326c903c04c522c27d45dacfb6a521a448a399a",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/4aa0a0890ece3b361fc4179b1e30fdcc0d2c689b",
+                "reference": "4aa0a0890ece3b361fc4179b1e30fdcc0d2c689b",
                 "shasum": ""
             },
             "conflict": {
@@ -9531,7 +9837,7 @@
                 "oro/customer-portal": ">=4.1,<=4.1.13|>=4.2,<=4.2.10|>=5,<=5.0.11|>=5.1,<=5.1.3",
                 "oro/platform": ">=1.7,<1.7.4|>=3.1,<3.1.29|>=4.1,<4.1.17|>=4.2,<=4.2.10|>=5,<=5.0.12|>=5.1,<=5.1.3",
                 "oveleon/contao-cookiebar": "<1.16.3|>=2,<2.1.3",
-                "oxid-esales/oxideshop-ce": "<4.5",
+                "oxid-esales/oxideshop-ce": "<=7.0.5",
                 "oxid-esales/paymorrow-module": ">=1,<1.0.2|>=2,<2.0.1",
                 "packbackbooks/lti-1-3-php-library": "<5",
                 "padraic/humbug_get_contents": "<1.1.2",
@@ -9954,7 +10260,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-13T20:06:05+00:00"
+            "time": "2025-05-14T18:07:05+00:00"
         },
         {
             "name": "sebastian/cli-parser",

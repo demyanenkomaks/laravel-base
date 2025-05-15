@@ -7,11 +7,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
+        "bezhansalleh/filament-shield": "^3.3",
         "filament/filament": "^3.3",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "maksde/helpers": "^4.1",
-        "maksde/support": "^1.0"
+        "maksde/support": "^1.0",
+        "tomatophp/filament-users": "^2.0"
     },
     "require-dev": {
         "driftingly/rector-laravel": "^2.0",

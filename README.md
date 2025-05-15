@@ -18,7 +18,8 @@
 6. Запускаем миграции `php artisan migrate`
 7. Создание символических ссылок `php artisan storage:link`
 8. Создание пользователя `php artisan make:filament-user`
-9. Готово!
+9. Указание пользователю роли super-admin `php artisan shield:super-admin --user=1`, где 1 - это id пользователя
+10. Готово!
 
 ## Команды использующиеся при разработке:
 

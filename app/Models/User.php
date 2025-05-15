@@ -7,10 +7,12 @@ use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements FilamentUser
 {
     use HasFactory;
+    use HasRoles;
     use Notifiable;
 
     /**
@@ -47,8 +49,12 @@ class User extends Authenticatable implements FilamentUser
         ];
     }
 
+    /**
+     * Проверка допуска пользователя в административную панель filament
+     */
     public function canAccessPanel(Panel $panel): bool
     {
-        return $this->hasVerifiedEmail();
+        return true;
+        // return $this->hasVerifiedEmail(); // При указании данного правила потребуется указать в бд, что пользователь верифицирован
     }
 }
