@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\Policies\ActivityPolicy;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use Spatie\Activitylog\Models\Activity;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,5 +27,7 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
             request()->server->set('HTTPS', request()->header('X-Forwarded-Proto', 'https') === 'https' ? 'on' : 'off');
         }
+
+        Gate::policy(Activity::class, ActivityPolicy::class); // Регистрация политики доступа для журнала активности
     }
 }
