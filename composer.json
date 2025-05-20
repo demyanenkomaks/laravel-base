@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.10.1",
         "maksde/helpers": "^4.2",
         "maksde/support": "^1.0",
+        "rickdbcn/filament-email": "^1.9",
         "rmsramos/activitylog": "^1.0",
         "saade/filament-laravel-log": "^3.2",
         "tomatophp/filament-users": "^2.0"

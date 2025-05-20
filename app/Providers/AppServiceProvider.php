@@ -3,9 +3,11 @@
 namespace App\Providers;
 
 use App\Policies\ActivityPolicy;
+use App\Policies\EmailPolicy;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use RickDBCN\FilamentEmail\Models\Email;
 use Spatie\Activitylog\Models\Activity;
 
 class AppServiceProvider extends ServiceProvider
@@ -29,5 +31,6 @@ class AppServiceProvider extends ServiceProvider
         }
 
         Gate::policy(Activity::class, ActivityPolicy::class); // Регистрация политики доступа для журнала активности
+        Gate::policy(Email::class, EmailPolicy::class); // Регистрация политики доступа для журнала отправленных E-mail
     }
 }

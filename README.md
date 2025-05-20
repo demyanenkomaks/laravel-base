@@ -85,7 +85,7 @@ composer fix
 
 * [x] [rmsramos/activitylog](https://github.com/rmsramos/activitylog) - Журнал активности
 * [x] [saade/filament-laravel-log](https://github.com/saade/filament-laravel-log) - Журнал ошибок
-* [ ] Журнал исходящих E-mail
+* [x] [rickdbcn/filament-email](https://github.com/rickdbcn/filament-email) - Журнал исходящих E-mail
 
 ### Разное
 
