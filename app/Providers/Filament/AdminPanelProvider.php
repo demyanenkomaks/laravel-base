@@ -68,7 +68,7 @@ class AdminPanelProvider extends PanelProvider
                 FilamentUsersPlugin::make(),
                 FilamentLaravelLogPlugin::make()
                     ->navigationGroup('Управление')
-                    ->navigationLabel('Журналы ошибок')
+                    ->navigationLabel('Журнал ошибок')
                     ->authorize(fn () => auth()->user()->can('page_ViewLog'))
                     ->navigationSort(10),
                 ActivitylogPlugin::make(),
