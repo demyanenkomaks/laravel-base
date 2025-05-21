@@ -11,7 +11,7 @@ parameters:
         - config/
         - lang/
         - database/
-#        - Modules/
+        - Modules/
         - public/
         - resources/
         - routes/
