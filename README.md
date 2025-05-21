@@ -71,6 +71,13 @@ composer phpstan
 composer fix
 ```
 
+#### Запускает тестирование 
+
+```bash
+composer test
+```
+
+
 ## 📋 Список предустановленных пакетов
 
 * [x] [Laravel](https://laravel.com/docs)
@@ -91,8 +98,8 @@ composer fix
 
 * [ ] Шаблоны E-mail
 * [ ] Настройки
-* [ ] Модули
-  * [ ] Api модуль с приветствием и настройкой CORS
+* [x] [coolsam/modules](https://github.com/savannabits/filament-modules) - Модули
+  * [x] Api модуль с приветствием (настройка CORS и добавление теста)
 
 ### Проверка кода
 
@@ -100,7 +107,7 @@ composer fix
 * [x] [laravel/pint](https://laravel.com/docs/pint) - Фиксатор стиля кода
 * [x] [larastan/larastan](https://github.com/larastan/larastan) - Статический анализ кода
 * [x] [roave/security-advisories](https://github.com/Roave/SecurityAdvisories) - Проверка пакетов по известным уязвимостям безопасности
-* [ ] [pestphp/pest](https://pestphp.com/docs/installation) - Тестирование кода
+* [x] [pestphp/pest](https://pestphp.com/docs/installation) - Тестирование кода
 
 ### Помощники
 

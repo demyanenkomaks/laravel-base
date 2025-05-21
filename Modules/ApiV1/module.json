@@ -1,0 +1,11 @@
+{
+    "name": "ApiV1",
+    "alias": "apiv1",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ApiV1\\Providers\\ApiV1ServiceProvider"
+    ],
+    "files": []
+}
