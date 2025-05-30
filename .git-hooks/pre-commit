@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Run Pest arch - если файлы лежат не на своих папках ответ "exit 1"
 # Run Rector - показывает что изменит и отдает ответ "exit 1"
 # Run Laravel Pint - исправляет стиль кода и отдает ответ "exit 1"
 # Run PhpStan - показывает ошибки в коде и отдает ответ "exit 1"
@@ -7,4 +8,4 @@
 # Каждая команда возвращает "exit 1" и по команде commit не будут зафиксированы изменения
 # Команды можно выполнить `composer fix`
 
-./vendor/bin/rector process --dry-run && ./vendor/bin/pint --repair && ./vendor/bin/phpstan analyse
+./vendor/bin/pest --group=arch && ./vendor/bin/rector process --clear-cache --dry-run && ./vendor/bin/pint --repair && ./vendor/bin/phpstan analyse

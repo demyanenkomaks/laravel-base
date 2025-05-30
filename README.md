@@ -10,7 +10,7 @@
 ## ⚙️ Разработка ведется
 
 - **PHP**: 8.3+
-- **MySql**: 8+ or **PgSql**: 16+
+- **MySql**: 8+ или **PgSql**: 16+
 - **Laravel**: 12
 - **FilamentPhp**: 3.x
 
@@ -53,28 +53,46 @@ composer cache
 composer rector
 ```
 
-#### Рефакторит стиль кода
+#### Показывает изменения которые бы он сделал, без рефакторинга PHP-код (выполняется в pre-commit)
+
+```bash
+composer rector:dry
+```
+
+#### Рефакторит стиль кода (выполняется в pre-commit)
 
 ```bash
 composer pint
 ```
 
-#### Показывает ошибки в коде
+#### Показывает ошибки в коде (выполняется в pre-commit)
 
 ```bash
 composer phpstan
-```
-
-#### Запускает команды rector, pint и phpstan (эти же проверки выполняются перед commit)
-
-```bash
-composer fix
 ```
 
 #### Запускает тестирование 
 
 ```bash
 composer test
+```
+
+#### Запускает тестирование до первого не пройденного теста
+
+```bash
+composer test:bail
+```
+
+#### Запускает проверку архитектуры проекта (выполняется в pre-commit)
+
+```bash
+composer test:arch
+```
+
+#### Запускает команды test:arch, rector, pint, phpstan
+
+```bash
+composer fix
 ```
 
 
@@ -98,7 +116,7 @@ composer test
 
 * [ ] Шаблоны E-mail
 * [ ] Настройки
-* [x] [coolsam/modules](https://github.com/savannabits/filament-modules) - Модули
+* [x] [coolsam/modules](https://github.com/savannabits/filament-modules) - Модули ([документация](https://laravelmodules.com/docs/12/getting-started/introduction)) ([artisan команды](https://laravelmodules.com/docs/12/advanced/artisan-commands))
   * [x] Api модуль с приветствием (настройка CORS и добавление теста)
 
 ### Проверка кода

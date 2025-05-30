@@ -12,10 +12,11 @@
 */
 
 pest()->extend(Tests\TestCase::class)
- // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
+    // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
     ->in(
+        'Architecture',
+        'Unit',
         'Feature',
-        '../Modules/*/tests/Feature',
     );
 
 /*
@@ -44,7 +45,22 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something(): void
+/**
+ * Получение списка модулей
+ */
+function getModules(): array
 {
-    // ..
+    return \Nwidart\Modules\Facades\Module::all();
+}
+
+/**
+ * Проверка для модулей.
+ */
+function getModuleNamespaces(?string $subNamespace = null): array
+{
+    if ($subNamespace !== null) {
+        $subNamespace = '\\'.$subNamespace;
+    }
+
+    return array_map(fn ($module): string => sprintf('Modules\%s%s', $module, $subNamespace), getModules());
 }

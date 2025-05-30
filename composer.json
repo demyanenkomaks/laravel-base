@@ -66,9 +66,11 @@
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite"
         ],
         "test": [
-            "@php artisan config:clear --ansi",
-            "@php artisan test"
+            "@cache:clear",
+            "./vendor/bin/pest"
         ],
+        "test:bail": "./vendor/bin/pest --bail",
+        "test:arch": "./vendor/bin/pest --group=arch",
         "cache:clear": [
             "@php artisan optimize:clear",
             "@php artisan filament:optimize-clear"
@@ -80,9 +82,11 @@
             "@php artisan filament:optimize"
         ],
         "pint": "./vendor/bin/pint",
-        "phpstan": "./vendor/bin/phpstan analyse",
-        "rector": "./vendor/bin/rector",
+        "phpstan": "./vendor/bin/phpstan analyse --memory-limit=-1",
+        "rector": "./vendor/bin/rector process --clear-cache",
+        "rector:dry": "./vendor/bin/rector process --clear-cache --dry-run",
         "fix": [
+            "@test:arch",
             "@rector",
             "@pint",
             "@phpstan"
