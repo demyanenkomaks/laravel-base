@@ -32,5 +32,12 @@ class AppServiceProvider extends ServiceProvider
 
         Gate::policy(Activity::class, ActivityPolicy::class); // Регистрация политики доступа для журнала активности
         Gate::policy(Email::class, EmailPolicy::class); // Регистрация политики доступа для журнала отправленных E-mail
+
+        // Дает пользователю с ролью super_admin доступ ко всей админ панели
+        Gate::before(static function ($user, $ability) {
+            if ($user->hasRole('super_admin')) {
+                return true;
+            }
+        });
     }
 }

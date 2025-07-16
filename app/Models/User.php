@@ -2,13 +2,12 @@
 
 namespace App\Models;
 
+use App\Traits\Models\LogsActivity;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Spatie\Activitylog\LogOptions;
-use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements FilamentUser
@@ -59,16 +58,5 @@ class User extends Authenticatable implements FilamentUser
     {
         return true;
         // return $this->hasVerifiedEmail(); // При указании данного правила потребуется указать в бд, что пользователь верифицирован
-    }
-
-    /**
-     * Правила логирования действий пользователя с моделью
-     */
-    public function getActivitylogOptions(): LogOptions
-    {
-        return LogOptions::defaults()
-            ->logOnly(['id', 'name', 'email', 'password'])
-            ->dontLogIfAttributesChangedOnly(['updated_at'])
-            ->logOnlyDirty();
     }
 }
