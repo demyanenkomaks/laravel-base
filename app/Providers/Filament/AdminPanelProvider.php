@@ -21,6 +21,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Maksde\FilamentEmailTemplates\FilamentEmailTemplatesPlugin;
 use RickDBCN\FilamentEmail\FilamentEmail;
 use Rmsramos\Activitylog\ActivitylogPlugin;
 use Saade\FilamentLaravelLog\FilamentLaravelLogPlugin;
@@ -76,6 +77,7 @@ class AdminPanelProvider extends PanelProvider
                 ActivitylogPlugin::make(),
                 FilamentEmail::make(),
                 ModulesPlugin::make(),
+                FilamentEmailTemplatesPlugin::make(),
             ])
             ->maxContentWidth(MaxWidth::Full)
             ->topNavigation();

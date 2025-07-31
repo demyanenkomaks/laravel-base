@@ -12,6 +12,7 @@
         "filament/filament": "^3.3",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "maksde/filament-email-templates": "^1.0",
         "maksde/helpers": "^4.2",
         "maksde/support": "^1.0",
         "rickdbcn/filament-email": "^1.9",
